@@ -3,6 +3,10 @@
  */
 @import 'imports/reset.css';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*
   Or add your statements here:
  */
@@ -27,6 +31,10 @@ a {
   text-decoration: none;
 }
 
-.content {
-  padding: 0 32px;
+.container {
+  @apply max-w-xl mx-auto p-4
+}
+
+h1 {
+  @apply text-5xl p-8
 }
